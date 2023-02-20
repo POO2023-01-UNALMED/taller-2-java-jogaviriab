@@ -11,13 +11,16 @@ public class Auto {
 	
 	int cantidadAsiento(){
 		
+		
 	}
 
 	String verificarIntegridad() {
+		String msg;
 		if(this.registro == this.motor.registro && this.registro == this.asientos.registro ) {
-			System.out.println("Auto original");
+			msg = "Auto original";
 		}else {
-			System.out.println("Las piezas no son originales");
+			msg = "Las piezas no son originales";
 		}
+		return msg;
 	}
 }
