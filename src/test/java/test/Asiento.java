@@ -5,11 +5,7 @@ public class Asiento {
 	int precio;
 	int registro;
 	
-	public Asiento(String string, int i, int j) {
-		this.color = string;
-		this.precio = i;
-		this.registro = j;
-	}
+
 
 	void cambiarColor(String color) {
 		if (color == "rojo"){
