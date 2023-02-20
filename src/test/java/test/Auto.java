@@ -1,4 +1,4 @@
-package Prueba;
+package test;
 
 public class Auto {
 	String modelo;
