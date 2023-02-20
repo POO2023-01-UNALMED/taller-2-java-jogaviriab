@@ -9,17 +9,6 @@ public class Auto {
 	int registro;
 	static int cantidadCreados=0;
 	
-
-	public Auto(String string, int i, Motor motor1, String string2, Asiento asien1[], int j) {
-		this.modelo = string;
-		this.precio = i;
-		this.motor = motor1;
-		this.asientos = asien1;
-		this.marca = string2;
-		this.registro = j;
-		Auto.cantidadCreados = Auto.cantidadCreados +1;
-		
-	}
 	
 	int cantidadAsientos() {
 		int cant = 0;
