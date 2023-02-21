@@ -14,8 +14,8 @@ public class Auto {
 		int cant = 0;
 		for(int i =0;i<20;i++) {
 		
-			if (this.asientos[i] != null) {
-				cant = cant +1;
+			if (asientos[i] != null) {
+				cant++;
 			}
 		}
 		return cant;
@@ -24,15 +24,15 @@ public class Auto {
 	}
 	String verificarIntegridad() {
 		String msg;
-		if(this.registro != this.motor.registro) {
+		if(registro != motor.registro) {
 			msg = "Las piezas no son originales";
 			return msg;
 		}
 		
 		
 		for(int i =0;i<20;i++) {
-			if (this.asientos[i] != null) {
-				if(this.asientos[i].registro!= this.registro) {
+			if (asientos[i] != null) {
+				if(asientos[i].registro!= registro) {
 					msg = "Las piezas no son originales";
 					return msg;
 				}
