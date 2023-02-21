@@ -13,7 +13,7 @@ public class Auto {
 	int cantidadAsientos() {
 		int cant = 0;
 		for(int i =0;i<20;i++) {
-			System.out.print(this.asientos[i]);
+		
 			if (this.asientos[i] != null) {
 				cant = cant +1;
 			}
