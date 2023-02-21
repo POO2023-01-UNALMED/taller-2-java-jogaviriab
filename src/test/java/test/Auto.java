@@ -3,7 +3,7 @@ package test;
 public class Auto {
 	String modelo;
 	int precio;
-	Asiento[] asientos = new Asiento[20];
+	Asiento asientos[];
 	String marca;
 	Motor motor;
 	int registro;
@@ -12,7 +12,7 @@ public class Auto {
 	
 	int cantidadAsientos() {
 		int cant = 0;
-		for(int i =0;i<20;i++) {
+		for(int i =0;i<asientos.length;i++) {
 		
 			if (asientos[i] != null) {
 				cant++;
@@ -30,7 +30,7 @@ public class Auto {
 		}
 		
 		
-		for(int i =0;i<20;i++) {
+		for(int i =0;i<asientos.length;i++) {
 			if (asientos[i] != null) {
 				if(asientos[i].registro!= registro) {
 					msg = "Las piezas no son originales";
